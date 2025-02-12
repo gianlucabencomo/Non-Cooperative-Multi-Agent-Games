@@ -1,0 +1,7 @@
+<mujoco>
+  <asset>
+      <texture name="skybox" type="skybox" builtin="gradient" rgb1=".4 .6 .8" rgb2="0 0 0"
+               width="800" height="800" mark="random" markrgb="1 1 1"/>
+      <material name="humanoid_color" rgba="0.8 0.5 0.6 1"/> 
+  </asset>
+</mujoco>
