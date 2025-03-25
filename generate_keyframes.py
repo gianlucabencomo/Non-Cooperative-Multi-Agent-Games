@@ -69,9 +69,9 @@ def motion_to_keyframes(joints, motions, root_joint_name="root", flip: bool = Fa
     return keyframes
 
 if __name__ == "__main__":
-    asf_path = './data/14.asf'  # Path to ASF file
-    amc_path = './data/14_01.amc'  # Path to AMC file
-    save_file = './keyframes/simple.txt'
+    asf_path = './mocap/14.asf'  # Path to ASF file
+    amc_path = './mocap/14_12.amc'  # Path to AMC file
+    save_file = './keyframes/14_12.txt'
 
     joints = parse_asf(asf_path)
     motions = parse_amc(amc_path)

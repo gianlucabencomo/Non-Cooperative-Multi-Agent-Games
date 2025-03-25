@@ -40,7 +40,7 @@ def imitate(model, data, renderer, keyframes, frame_skip: int = 2, save: bool = 
     if show:
         show_video(frames)
 
-def main(seed: int = 0, model: str = "./models/simple.xml", keyframe_file: str = "./keyframes/simple.txt", show: bool = False, save: bool = False):
+def main(seed: int = 0, model: str = "./models/simple.xml", keyframe_file: str = "./keyframes/14_01.txt", show: bool = False, save: bool = False):
     np.random.seed(seed)
 
     # Load XML files + mujoco setup

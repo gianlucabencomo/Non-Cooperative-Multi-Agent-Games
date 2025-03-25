@@ -1,0 +1,47 @@
+<mujoco model="Ring">
+  <option timestep="0.005"/>
+
+  <include file="../common/skybox.xml"/>
+
+  <visual>
+    <global offwidth="2560" offheight="1440" elevation="-20" azimuth="120"/>
+  </visual>
+
+  <worldbody>
+    <geom name="platform" type="box" size="3 3 0.5" pos="0 0 0.5" rgba="0.8 0.1 0.1 1" condim="3"/>
+
+    <!-- Boxing Ropes and Posts -->
+    <!-- Corner Posts -->
+    <geom name="post1" type="cylinder" size="0.1 1.0" pos="-2.5 -2.5 1.0" rgba="0.8 0.8 0.8 1"/>
+    <geom name="post2" type="cylinder" size="0.1 1.0" pos="2.5 -2.5 1.0" rgba="0.8 0.8 0.8 1"/>
+    <geom name="post3" type="cylinder" size="0.1 1.0" pos="-2.5 2.5 1.0" rgba="0.8 0.8 0.8 1"/>
+    <geom name="post4" type="cylinder" size="0.1 1.0" pos="2.5 2.5 1.0" rgba="0.8 0.8 0.8 1"/>
+
+    <!-- Bottom Rope -->
+    <geom name="rope_bottom_1" type="cylinder" size="0.03 2.5" pos="0 -2.5 1.2" euler="0 90 0" rgba="1 1 1 1"/>
+    <geom name="rope_bottom_2" type="cylinder" size="0.03 2.5" pos="0 2.5 1.2" euler="0 90 0" rgba="1 1 1 1"/>
+    <geom name="rope_bottom_3" type="cylinder" size="0.03 2.5" pos="-2.5 0 1.2" euler="90 180 0" rgba="1 1 1 1"/>
+    <geom name="rope_bottom_4" type="cylinder" size="0.03 2.5" pos="2.5 0 1.2" euler="90 180 0" rgba="1 1 1 1"/>
+
+    <!-- Middle Rope 1-->
+    <geom name="rope_middle_1_1" type="cylinder" size="0.03 2.5" pos="0 -2.5 1.4" euler="0 90 0" rgba="0 0 1 1"/>
+    <geom name="rope_middle_1_2" type="cylinder" size="0.03 2.5" pos="0 2.5 1.4" euler="0 90 0" rgba="0 0 1 1"/>
+    <geom name="rope_middle_1_3" type="cylinder" size="0.03 2.5" pos="-2.5 0 1.4" euler="90 180 0" rgba="0 0 1 1"/>
+    <geom name="rope_middle_1_4" type="cylinder" size="0.03 2.5" pos="2.5 0 1.4" euler="90 180 0" rgba="0 0 1 1"/>
+
+    <!-- Middle Rope 2 -->
+    <geom name="rope_middle_2_1" type="cylinder" size="0.03 2.5" pos="0 -2.5 1.6" euler="0 90 0" rgba="1 1 1 1"/>
+    <geom name="rope_middle_2_2" type="cylinder" size="0.03 2.5" pos="0 2.5 1.6" euler="0 90 0" rgba="1 1 1 1"/>
+    <geom name="rope_middle_2_3" type="cylinder" size="0.03 2.5" pos="-2.5 0 1.6" euler="90 180 0" rgba="1 1 1 1"/>
+    <geom name="rope_middle_2_4" type="cylinder" size="0.03 2.5" pos="2.5 0 1.6" euler="90 180 0" rgba="1 1 1 1"/>
+
+    <!-- Top Rope -->
+    <geom name="rope_top_1" type="cylinder" size="0.03 2.5" pos="0 -2.5 1.8" euler="0 90 0" rgba="1 0 0 1"/>
+    <geom name="rope_top_2" type="cylinder" size="0.03 2.5" pos="0 2.5 1.8" euler="0 90 0" rgba="1 0 0 1"/>
+    <geom name="rope_top_3" type="cylinder" size="0.03 2.5" pos="-2.5 0 1.8" euler="90 180 0" rgba="1 0 0 1"/>
+    <geom name="rope_top_4" type="cylinder" size="0.03 2.5" pos="2.5 0 1.8" euler="90 180 0" rgba="1 0 0 1"/>
+
+    <!-- Uniform Light Focused on Mat -->
+    <light name="mat_light" diffuse="1.0 1.0 1.0" specular="0.2 0.2 0.2" pos="0 0 4" dir="0 0 -1" cutoff="180" exponent="1"/>
+  </worldbody>
+</mujoco>
